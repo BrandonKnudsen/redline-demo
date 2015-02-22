@@ -1,0 +1,72 @@
+.redline--comments--comment-list {
+	float: right;	
+	width: 30em;
+	margin: 13em 10em 0 0;
+}
+
+.redline--comment-list--comment {
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	&:first-of-type {
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+	}
+	&:nth-child(n+2) {
+		margin: 1rem 0;
+		padding: 1rem 0;
+	}
+	&:not(:last-of-type) {
+		border-bottom: 1px solid $baby-blue;
+	}
+	h5, .fa {
+		color: $navy-blue;
+	}
+	p, p:focus {
+		background: none;
+	}
+	&:hover {
+		h5, .fa {
+			color: $pacific-blue;
+		}
+		p {
+			background: $baby-blue;
+			&:focus {
+				background: none;
+			}
+		}
+	}
+	.fa {
+		vertical-align: top;
+	}
+	img {
+		display: inline-block;
+	}
+}	
+
+.redline--comment--comment-box {
+	//@include animation(fadeInUp 1s); 
+	float: right;
+	display: inline-block;
+	width: 85%;
+	h5 {
+		margin-bottom: 0.5em;
+		line-height: 1em;
+	}
+	p {
+		margin-bottom: 0;
+		//font-family: 'Old Standard TT', Georgia, serif;
+		font-style: italic;
+	}
+	a {
+		font-size: 0.8em;
+		line-height: 1.2em;
+	}
+} 
+
+.redline--comment-box {
+	&--bullet {
+		font-size: 0.6em;
+		line-height: 1.2em;
+	}
+}

@@ -1,0 +1,71 @@
+.redline--popover-message {
+	display: none;
+}
+
+.button:hover + .redline--popover-message {
+	float: right;
+	display: block;
+	z-index: 1000;
+	position: absolute;
+	top: 8em;
+	margin-left: -6.25em;
+	width: 15em;
+	padding: 1em;
+	text-align: center;
+	color: #777;
+	text-transform: none;
+	line-height: 1;
+	background: $gray;
+	box-shadow: rgba(50, 50, 50, 0.15) 7px 7px 14px;
+	&:after {
+		bottom: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(136, 183, 213, 0);
+		border-bottom-color: #e5e5e5;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+}
+
+.redline-top-toolbar {
+	display: block;
+	height: 5em;
+	&--left-controls {
+		float: left;
+	}
+	&--comments-switch {
+		float: right;
+	}
+	&--button {
+		float: right;
+		height: 2.35em;
+		width: 2.35em;
+		padding: 0;
+		color: $atlantic-blue;
+    	background-color: $baby-blue;
+		&:hover,
+		&.buttonActive {
+			color: $gold-yellow;
+			background-color: $atlantic-blue;
+		}
+		&.multipleValues {
+			color: $gold-yellow;
+	   		background: linear-gradient(137deg, #3a87ad 0%,#3a87ad 50%,#0b5394 51%,#0b5394 100%);
+		} 
+		&__disabled {
+			color: #888;
+			background-color: $gray;
+			&:hover {
+				cursor: not-allowed;
+				color: #777;
+				background-color: $soft-gray;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.redline {
+	padding-top: 3em;
+	&--text {
+		float: left;
+		// overall redline width relies on text div because we are changing the width dynamically
+		width: 54.6em; 
+		padding: 0 3em 2em;
+	}
+	&--comments {
+		float: left;
+	}
+	&--carota-instance {
+		width: 99%;
+		min-height: 20em;
+	}
+	&--revision-history {
+		padding-bottom: 5em;
+		//@include animation(fadeInDown 0.5s); 
+		li {
+			color: #888;
+			padding-top: 0.5em;
+			padding-bottom: 1em;
+		}
+		li:first-of-type {
+			margin-top: 1em;
+		}
+		li:nth-child(n+2) {
+			border-top: 1px solid $gray;
+		}
+		h4 {
+			color: #666;
+			font-weight: 400;
+			font-size: 0.85em;
+			line-height: 1.8em;
+		}   
+	}
+}

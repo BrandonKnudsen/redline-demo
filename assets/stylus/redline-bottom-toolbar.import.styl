@@ -1,0 +1,24 @@
+.redline-bottom-toolbar {
+	&--save-button {
+		float: right;
+		color: $atlantic-blue;
+    	background-color: $baby-blue;
+		&:hover {
+			color: $gold-yellow;
+			background-color: $atlantic-blue;
+		}
+	}
+	&--track-changes-button {
+		background: lighten($deep-red, 50%);
+		color: $deep-red;
+		&.active, 
+		&:hover {
+			background: $apple-red-full;
+			color: $gold-yellow;
+		}
+	}
+	&--word-count {
+		float: right;
+		font-size: 0.85em;
+	}
+}
